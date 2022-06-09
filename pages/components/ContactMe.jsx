@@ -30,7 +30,12 @@ function ContactMe({ light }) {
 						<ThankYou light={light} />
 					</div>
 				) : (
-					<form onSubmit={handleSubmit} className="space-y-3 bg-dark rounded-md p-3" data-netlify="true">
+					<form
+						onSubmit={handleSubmit}
+						className="space-y-3 bg-dark rounded-md p-3"
+						data-netlify="true"
+						name="contact"
+					>
 						<input type="hidden" name="form-name" value="contact" />
 						<div className="flex space-x-3">
 							<div className="space-y-1 w-1/2">
