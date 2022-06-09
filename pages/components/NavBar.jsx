@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { useState } from 'react';
-import { FaSun, FaMoon } from 'react-icons/fa';
+import DayNightToggle from './DayNightToggle';
 
 function NavBar({ lightMode, setLightMode }) {
 	const [ open, setOpen ] = useState(false);
@@ -15,34 +15,51 @@ function NavBar({ lightMode, setLightMode }) {
 				)
 			}
 		>
-			<h1 className="py-5  px-5 font-semibold text-xl items-center flex">Emil Chigu</h1>
+			<h1 className="py-5  px-5 font-semibold text-xl items-center flex w-full">Emil Chigu</h1>
 			<div className="sm:hidden  py-5  px-5 flex space-x-3 items-center">
-				<div className="flex items-center justify-center w-full space-x-1 ">
-					<FaMoon />
-					<label htmlFor="toggleB" className="flex items-center cursor-pointer">
-						<div className="relative">
-							<input type="checkbox" id="toggleB" className="sr-only" />
-
-							<div
-								className={`block ${lightMode
-									? 'bg-dark'
-									: 'bg-white'} opacity-10 w-14 h-8 rounded-full`}
-							/>
-
-							<div
-								onClick={setLightMode}
-								className="dot absolute left-1 top-1 bg-white w-6 h-6 rounded-full transition duration-300 ease-in-out"
-							/>
-						</div>
-					</label>
-					<FaSun />
-				</div>
+				<DayNightToggle lightMode={lightMode} setLightMode={setLightMode} />
 				<div className="space-y-2" onClick={() => setOpen(!open)}>
 					<span className={lightMode ? 'block w-8 h-0.5 bg-dark' : 'block w-8 h-0.5 bg-white'} />
 					<span className={lightMode ? 'block w-8 h-0.5 bg-dark' : 'block w-8 h-0.5 bg-white'} />
 					<span className={lightMode ? 'block w-8 h-0.5 bg-dark' : 'block w-8 h-0.5 bg-white'} />
 				</div>
 			</div>
+			<div className="hidden md:block w-full">
+				<div className=" py-5  px-5 flex space-x-3 items-center justify-end">
+					<div className="flex  space-x-3">
+						<div className="font-semibold">
+							<Link href="#home">
+								<div className="cursor-pointer">
+									<p className="font-light">HOME</p>
+								</div>
+							</Link>
+						</div>
+						<div className="font-semibold">
+							<Link href="#about">
+								<div className="cursor-pointer">
+									<p className="font-light">ABOUT ME</p>
+								</div>
+							</Link>
+						</div>
+						<div className="font-semibold">
+							<Link href="#builds">
+								<div className="cursor-pointer">
+									<p className="font-light">PROJECTS</p>
+								</div>
+							</Link>
+						</div>
+						<div className="font-semibold">
+							<Link href="#contact">
+								<div className="cursor-pointer">
+									<p className="font-light">CONTACT</p>
+								</div>
+							</Link>
+						</div>
+					</div>
+					<DayNightToggle lightMode={lightMode} setLightMode={setLightMode} />
+				</div>
+			</div>
+
 			{open && (
 				<div
 					className={`fixed w-screen h-screen ${lightMode ? 'bg-dark' : 'bg-white'} opacity-40 blur-sm ${open

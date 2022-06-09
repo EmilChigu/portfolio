@@ -4,7 +4,7 @@ import { FaPython } from 'react-icons/fa';
 
 function About({ light }) {
 	return (
-		<div id="about" className={`${light ? 'text-dark' : 'text-white'} py-3 px-5 flex-grow-1 space-y-3 `}>
+		<div id="about" className={`scroll-mt-24 ${light ? 'text-dark' : 'text-white'} py-3 px-5 sm:w-3/4 space-y-3 `}>
 			<TitleComponent title={'ABOUT ME'} light={light} />
 			<div className="text-lg">
 				Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde vero sit cupiditate nesciunt, minus

@@ -18,7 +18,10 @@ function ContactMe({ light }) {
 
 	return (
 		<React.Fragment>
-			<div id="contact" className={`${light ? 'text-dark' : 'text-white'} py-3 px-5 flex-grow-1 space-y-10 `}>
+			<div
+				id="contact"
+				className={` scroll-mt-24 ${light ? 'text-dark' : 'text-white'} py-3 px-5 sm:w-3/4 space-y-10 `}
+			>
 				<TitleComponent title={'Get in touch'} light={light} />
 				{sent ? (
 					'Thank you'

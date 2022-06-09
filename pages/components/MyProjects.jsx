@@ -16,7 +16,10 @@ import { SiJavascript, SiTailwindcss, SiMongodb, SiDjango } from 'react-icons/si
 
 function MyProjects({ light }) {
 	return (
-		<div id="builds" className={`${light ? 'text-dark' : 'text-white'} py-3 px-5 flex-grow-1 space-y-10 `}>
+		<div
+			id="builds"
+			className={`scroll-mt-24 ${light ? 'text-dark' : 'text-white'} py-3 px-5 sm:w-3/4 space-y-10 text-center `}
+		>
 			<TitleComponent title={'My Builds'} light={light} />
 			<div className="flex space-x-3 ">
 				<div className="flex flex-col items-center justify-center space-y-3 text-3xl">
@@ -57,7 +60,7 @@ function MyProjects({ light }) {
 					</div>
 				</div>
 			</div>
-			<div className="flex space-x-3 mt-5">
+			<div className="flex  space-x-3 mt-5 justify-between">
 				<div className="flex flex-col items-center justify-center space-y-3 text-3xl">
 					<div data-tooltip-target="tooltip-default">
 						<FaGithub />
@@ -75,7 +78,7 @@ function MyProjects({ light }) {
 						</p>
 					</div>
 				</div>
-				<div className="flex flex-col items-center justify-center space-y-3 text-3xl">
+				<div className="flex flex-col items-center justify-items-end justify-center space-y-3 text-3xl  ">
 					<div>
 						<FaHtml5 />
 					</div>
