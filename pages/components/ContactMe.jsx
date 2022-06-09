@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import ThankYou from './ThankYou';
 import TitleComponent from './TitleComponent';
 
 function ContactMe({ light }) {
@@ -18,15 +19,14 @@ function ContactMe({ light }) {
 
 	return (
 		<React.Fragment>
-			<div
-				id="contact"
-				className={` scroll-mt-24 ${light ? 'text-dark' : 'text-white'} py-3 px-5 sm:w-3/4 space-y-10 `}
-			>
+			<div id="contact" className={` scroll-mt-24 text-white text-lg w-full px-5 sm:w-3/4 space-y-10 `}>
 				<TitleComponent title={'Get in touch'} light={light} />
 				{sent ? (
-					'Thank you'
+					<div className="flex justify-center text-center bg-dark rounded-md py-10">
+						<ThankYou light={light} />
+					</div>
 				) : (
-					<form onSubmit={handleSubmit} className="space-y-3">
+					<form onSubmit={handleSubmit} className="space-y-3 bg-dark rounded-md p-3">
 						<div className="flex space-x-3">
 							<div className="space-y-1 w-1/2">
 								<label htmlFor="name">Name</label>
@@ -34,7 +34,7 @@ function ContactMe({ light }) {
 									type="text"
 									name="name"
 									id="name"
-									className="w-full border-primary text-dark"
+									className={`w-full border-primary text-dark`}
 									onChange={handleInput('name')}
 									required
 								/>

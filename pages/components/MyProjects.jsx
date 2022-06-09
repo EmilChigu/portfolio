@@ -2,32 +2,35 @@ import React from 'react';
 import TitleComponent from './TitleComponent';
 import {
 	FaReact,
-	FaPython,
-	FaNodeJs,
 	FaGithub,
-	FaGitHub,
-	FaDigitalOcean,
 	FaUbuntu,
 	FaHtml5,
 	FaCss3,
-	FaExternalLinkSquareAlt
+	FaExternalLinkSquareAlt,
+	FaNodeJs,
+	FaCpanel,
+	FaDigitalOcean
 } from 'react-icons/fa';
-import { SiJavascript, SiTailwindcss, SiMongodb, SiDjango } from 'react-icons/si';
+import { SiJavascript, SiTailwindcss, SiMongodb } from 'react-icons/si';
 
 function MyProjects({ light }) {
 	return (
 		<div
 			id="builds"
-			className={`scroll-mt-24 ${light ? 'text-dark' : 'text-white'} py-3 px-5 sm:w-3/4 space-y-10 text-center `}
+			className={`scroll-mt-24 ${light ? 'text-dark' : 'text-white'} py-3 px-5 sm:w-3/4 space-y-12 text-center `}
 		>
 			<TitleComponent title={'My Builds'} light={light} />
-			<div className="flex space-x-3 ">
-				<div className="flex flex-col items-center justify-center space-y-3 text-3xl">
-					<div data-tooltip-target="tooltip-default" className="hover:animate-bounce">
-						<FaGithub />
+			<div className=" space-y-3 ">
+				<div className="flex  items-center justify-center space-x-3  text-3xl">
+					<div data-tooltip-target="tooltip-default" className="hover:animate-bounce cursor-pointer">
+						<a href="http://" target="_blank" rel="noopener noreferrer">
+							<FaGithub />
+						</a>
 					</div>
-					<div className="hover:animate-bounce">
-						<FaExternalLinkSquareAlt />
+					<div className="hover:animate-bounce cursor-pointer">
+						<a href="https://www.compliance-aid.co.uk" target="_blank" rel="noopener noreferrer">
+							<FaExternalLinkSquareAlt />
+						</a>
 					</div>
 				</div>
 				<div>
@@ -45,7 +48,7 @@ function MyProjects({ light }) {
 						</p>
 					</div>
 				</div>
-				<div className="flex flex-col items-center justify-center space-y-3 text-3xl">
+				<div className="flex  items-center justify-center space-x-3  text-3xl">
 					<div>
 						<FaReact />
 					</div>
@@ -53,20 +56,29 @@ function MyProjects({ light }) {
 						<SiMongodb />
 					</div>
 					<div>
+						<FaNodeJs />
+					</div>
+					<div>
 						<SiTailwindcss />
 					</div>
 					<div>
 						<FaUbuntu />
 					</div>
+					<div>
+						<FaDigitalOcean />
+					</div>
 				</div>
 			</div>
-			<div className="flex  space-x-3 mt-5 justify-between">
-				<div className="flex flex-col items-center justify-center space-y-3 text-3xl">
-					<div data-tooltip-target="tooltip-default">
+			<div className="space-y-3 mt-5 justify-between">
+				<div className="flex items-center justify-center space-x-3 text-3xl">
+					<div data-tooltip-target="tooltip-default" className="hover:animate-bounce cursor-pointer">
+						<a href="http://" target="_blank" rel="noopener noreferrer" />
 						<FaGithub />
 					</div>
-					<div>
-						<FaExternalLinkSquareAlt />
+					<div className="hover:animate-bounce cursor-pointer">
+						<a href="https://www.tafaracareservices.com" target="_blank" rel="noopener noreferrer">
+							<FaExternalLinkSquareAlt />
+						</a>
 					</div>
 				</div>
 				<div>
@@ -78,7 +90,7 @@ function MyProjects({ light }) {
 						</p>
 					</div>
 				</div>
-				<div className="flex flex-col items-center justify-items-end justify-center space-y-3 text-3xl  ">
+				<div className="flex  items-center justify-items-end justify-center space-x-3 text-3xl  ">
 					<div>
 						<FaHtml5 />
 					</div>
@@ -87,6 +99,9 @@ function MyProjects({ light }) {
 					</div>
 					<div>
 						<SiJavascript />
+					</div>
+					<div>
+						<FaCpanel />
 					</div>
 				</div>
 			</div>

@@ -6,6 +6,7 @@ import MyProjects from './components/MyProjects';
 import Footer from './components/Footer';
 import NavBar from './components/NavBar';
 import OtherProjects from './components/OtherProjects';
+import { FaLinkedin, FaGithub } from 'react-icons/fa';
 
 export default function Home() {
 	const [ light, setLight ] = useState(false);
@@ -17,7 +18,11 @@ export default function Home() {
 		<div className="scroll-smooth">
 			<HeadComponent />
 			<NavBar lightMode={light} setLightMode={changeMode} />
-			<div className={`${light ? 'bg-white' : 'bg-dark'} h-screen flex  items-center sm:px-6    `}>
+			<div
+				className={`${light
+					? 'bg-white'
+					: 'bg-dark bg-blend-multiply'} h-screen flex  items-center sm:px-6 background-image -mt-8`}
+			>
 				<div className=" scroll-mt-24 py-3 px-5 grow space-y-2  " id="home">
 					<p className="text-primary font-semibold text-lg sm:text-xl">My name is</p>
 					<h1 className={`${light ? 'text-dark' : 'text-white'} text-5xl sm:text-8xl font-black`}>
@@ -30,10 +35,31 @@ export default function Home() {
 						Cyber security enthusiast
 					</p>
 					<p className={`${light ? 'text-dark' : 'text-white'}  text-lg sm:w-1/2`}>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni fuga velit non qui deserunt odit
-						quas beatae alias nesciunt eum consequuntur doloribus atque, minima ullam rem corporis
-						praesentium! Ipsam, consectetur?
+						I am <span>full stack web developer</span> working with python and javascript, my curious
+						hungry-for-problem-solving mind has found me tapping into the world of cyber security,
+						especially web application security. My passion and aspiration is to build applications that
+						work and are secure.
 					</p>
+					<div
+						className={`${light
+							? 'text-dark'
+							: 'text-white'} text-2xl sm:text-4xl font-black flex space-x-3`}
+					>
+						<div className="hover:animate-bounce">
+							<a href="https://github.com/EmilChigu" target="_blank" rel="noopener noreferrer">
+								<FaGithub />
+							</a>
+						</div>
+						<div className="hover:animate-bounce">
+							<a
+								href="https://www.linkedin.com/in/emil-chigu-492354115/"
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								<FaLinkedin />
+							</a>
+						</div>
+					</div>
 				</div>
 			</div>
 			<div className={`${light ? 'bg-white' : 'bg-dark'} h-full  flex flex-col  items-center space-y-5`}>
