@@ -12,9 +12,14 @@ function ContactMe({ light }) {
 
 	const handleSubmit = (e) => {
 		e.preventDefault();
-		console.log(formData);
 
-		setSent(true);
+		fetch('/', {
+			method: 'POST',
+			headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+			body: encode({ 'form-name': 'contact', ...formData })
+		})
+			.then(() => setSent(true))
+			.catch((error) => alert(error));
 	};
 
 	return (
@@ -26,7 +31,8 @@ function ContactMe({ light }) {
 						<ThankYou light={light} />
 					</div>
 				) : (
-					<form onSubmit={handleSubmit} className="space-y-3 bg-dark rounded-md p-3">
+					<form onSubmit={handleSubmit} className="space-y-3 bg-dark rounded-md p-3" data-netlify="true">
+						<input type="hidden" name="form-name" value="contact" />
 						<div className="flex space-x-3">
 							<div className="space-y-1 w-1/2">
 								<label htmlFor="name">Name</label>
