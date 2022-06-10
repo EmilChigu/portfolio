@@ -16,7 +16,9 @@ function NavBar({ lightMode, setLightMode }) {
 				)
 			}
 		>
-			<h1 className="py-5  px-5 font-semibold text-3xl items-center flex w-full text-primary">Emil Chigu</h1>
+			<h1 className="py-5  px-5 font-semibold text-3xl items-center flex w-full sm:w-1/4 text-primary">
+				Emil Chigu
+			</h1>
 			<div className="sm:hidden  py-5  px-5 flex space-x-3 items-center">
 				<DayNightToggle lightMode={lightMode} setLightMode={setLightMode} />
 				<div className="space-y-2" onClick={() => setOpen(!open)}>
@@ -28,32 +30,43 @@ function NavBar({ lightMode, setLightMode }) {
 			<div className="hidden md:block w-full">
 				<div className=" py-5  px-5 flex space-x-3 items-center justify-end">
 					<div className="flex  space-x-3 ">
-						<div className="font-semibold">
+						<div className="font-semibold flex items-center">
 							<Link href="#home">
 								<div className="cursor-pointer">
 									<p className="text-lg">HOME</p>
 								</div>
 							</Link>
 						</div>
-						<div className="font-semibold">
+						<div className="font-semibold flex items-center">
 							<Link href="#about">
 								<div className="cursor-pointer">
 									<p className="text-lg">ABOUT ME</p>
 								</div>
 							</Link>
 						</div>
-						<div className="font-semibold">
+						<div className="font-semibold flex items-center">
 							<Link href="#builds">
 								<div className="cursor-pointer">
 									<p className="text-lg">PROJECTS</p>
 								</div>
 							</Link>
 						</div>
-						<div className="font-semibold">
+						<div className="font-semibold flex items-center">
 							<Link href="#contact">
 								<div className="cursor-pointer">
 									<p className="text-lg">CONTACT</p>
 								</div>
+							</Link>
+						</div>
+						<div className="font-semibold">
+							<Link href="#contact">
+								<button
+									className={`${lightMode
+										? 'bg-dark text-white'
+										: 'bg-white text-dark'} px-8 py-2 rounded-md text-2xl `}
+								>
+									<h1 className="">CV</h1>
+								</button>
 							</Link>
 						</div>
 					</div>
@@ -111,8 +124,17 @@ function NavBar({ lightMode, setLightMode }) {
 							</div>
 						</Link>
 					</div>
-
-					<div>CV</div>
+					<div className="font-bold flex justify-center ">
+						<Link href="/#contact">
+							<button
+								className={`${lightMode
+									? 'bg-dark text-white'
+									: 'bg-white text-dark'} px-4 py-3 rounded-md text-2xl w-1/2`}
+							>
+								<h1 className="">CV</h1>
+							</button>
+						</Link>
+					</div>
 				</div>
 			</div>
 		</nav>

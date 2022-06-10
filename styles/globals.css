@@ -47,7 +47,3 @@ input:checked ~ .dot {
 html {
 	scroll-behavior: smooth;
 }
-
-.background-image {
-	background-image: url();
-}

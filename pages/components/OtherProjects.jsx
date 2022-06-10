@@ -11,7 +11,7 @@ function OtherProjects({ light }) {
 			>
 				<TitleComponent title={'Other Builds'} light={light} />
 				<div className="space-y-3">
-					<p className="text-center">Other projects i have worked n can be found on my github</p>
+					<p className="text-center">Other projects i have worked on can be found on my github</p>
 					<div className="flex sm:justify-center space-x-3">
 						<div
 							className={`${light

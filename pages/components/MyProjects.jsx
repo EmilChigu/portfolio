@@ -85,8 +85,8 @@ function MyProjects({ light }) {
 					<div className="space-y-3">
 						<h2 className="font-semibold text-xl">Tafara Care Services</h2>
 						<p>
-							This was s simple static website built for a UK business. The website very simple animations
-							and contact form,
+							This was a simple static business website, The website features very simple animations and a
+							contact form.
 						</p>
 					</div>
 				</div>
