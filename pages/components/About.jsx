@@ -1,13 +1,13 @@
 import React from 'react';
 import TitleComponent from './TitleComponent';
-import { FaPython } from 'react-icons/fa';
+
 
 function About({ light }) {
 	return (
 		<div id="about" className={`scroll-mt-24 ${light ? 'text-dark' : 'text-white'} py-3 px-5 sm:w-3/4 space-y-3 `}>
 			<TitleComponent title={'ABOUT ME'} light={light} />
-			<div className="text-lg">
-								<p>Hi, my name is Emil Chigu and i'm looking forward to working with you. I first became acquainted with wed development 
+			<div className="text-lg space-y-3">
+								<p>Hi, my name is Emil Chigu and i&apos;m looking forward to working with you. I first became acquainted with wed development 
 									when i was a product developer for a nutritional supplement company in 
 									<span className='text-primary'>2018</span>. After playing around with 
 									wordpress, wix and other drag and drop website builders, i realised i wanted 
