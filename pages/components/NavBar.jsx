@@ -59,15 +59,16 @@ function NavBar({ lightMode, setLightMode }) {
 							</Link>
 						</div>
 						<div className="font-semibold">
-							<Link href="#contact">
-								<button
+						
+						<a href="https://compliance-aid.s3.eu-west-2.amazonaws.com/Emil_Chigu_Full_Stack_Web_Developer+.pdf" target="_blank" rel="noopener noreferrer"><button
 									className={`${lightMode
 										? 'bg-dark text-white'
 										: 'bg-white text-dark'} px-8 py-2 rounded-md text-2xl `}
 								>
-									<h1 className="">CV</h1>
-								</button>
-							</Link>
+								<h1 className="">CV</h1>
+								</button></a>
+								
+						
 						</div>
 					</div>
 					<DayNightToggle lightMode={lightMode} setLightMode={setLightMode} />
@@ -113,7 +114,7 @@ function NavBar({ lightMode, setLightMode }) {
 					<div className="font-semibold">
 						<Link href="/#builds">
 							<div>
-								<p className="text-lg">Projects</p>
+								<p className="text-lg">PROJECTS</p>
 							</div>
 						</Link>
 					</div>
@@ -125,15 +126,13 @@ function NavBar({ lightMode, setLightMode }) {
 						</Link>
 					</div>
 					<div className="font-bold flex justify-center ">
-						<Link href="/#contact">
-							<button
-								className={`${lightMode
-									? 'bg-dark text-white'
-									: 'bg-white text-dark'} px-4 py-3 rounded-md text-2xl w-1/2`}
-							>
+						<a href="https://compliance-aid.s3.eu-west-2.amazonaws.com/Emil_Chigu_Full_Stack_Web_Developer+.pdf" target="_blank" rel="noopener noreferrer"><button
+									className={`${lightMode
+										? 'bg-dark text-white'
+										: 'bg-white text-dark'} px-8 py-2 rounded-md text-2xl `}
+								>
 								<h1 className="">CV</h1>
-							</button>
-						</Link>
+								</button></a>
 					</div>
 				</div>
 			</div>

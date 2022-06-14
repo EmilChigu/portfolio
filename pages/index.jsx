@@ -35,10 +35,10 @@ export default function Home() {
 						Cyber security enthusiast
 					</p>
 					<p className={`${light ? 'text-dark' : 'text-white'}  text-lg sm:w-1/2`}>
-						I am a<span>full stack web developer</span> working with python and javascript, my curious
-						hungry-for-problem-solving mind has found me tapping into the world of cyber security,
+						I am a <span>full stack web developer</span> working with python and javascript, my curious
+						hungry-for-problem-solving mind has also found me tapping into the world of cyber security,
 						especially web application security. My passion and aspiration is to build applications that
-						work and are secure.
+						work and are as secure as they can be.
 					</p>
 					<div
 						className={`${light
