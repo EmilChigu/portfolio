@@ -75,7 +75,7 @@ function MyProjects({ light }) {
 			<div className="space-y-3 mt-5 justify-between">
 				<div className="flex items-center justify-center space-x-3 text-3xl">
 					<div data-tooltip-target="tooltip-default" className="hover:animate-bounce cursor-pointer">
-						<a href="https://github.com/EmilChigu/portfolio-blog" target="_blank" rel="noopener noreferrer" >
+						<a href="https://github.com/EmilChigu/portfolio" target="_blank" rel="noopener noreferrer" >
 						<FaGithub />
 						</a>
 					</div>
