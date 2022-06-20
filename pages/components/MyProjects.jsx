@@ -41,7 +41,7 @@ function MyProjects({ light }) {
 						<h2 className="font-semibold text-xl">Compliance Aid v2.0</h2>
 						<p>
 							Majority of my coding time has been dedicated to perfecting a Saas project for a startapp called Compliance Aid. The application
-							is for staff management in the health care supplier industry.
+							is for staff management in the health care supplier industry. The repo is private but i am happy to share it on request.
 						</p>
 
 						<p>
@@ -111,11 +111,11 @@ function MyProjects({ light }) {
 			<div className="space-y-3 mt-5 justify-between">
 				<div className="flex items-center justify-center space-x-3 text-3xl">
 					<div data-tooltip-target="tooltip-default" className="hover:animate-bounce cursor-pointer">
-						<a href="http://" target="_blank" rel="noopener noreferrer" />
+						<a href="https://github.com/EmilChigu/TCS-website" target="_blank" rel="noopener noreferrer" />
 						<FaGithub />
 					</div>
 					<div className="hover:animate-bounce cursor-pointer">
-						<a href="https://www.tafaracareservices.com" target="_blank" rel="noopener noreferrer">
+						<a href="" target="_blank" rel="noopener noreferrer">
 							<FaExternalLinkSquareAlt />
 						</a>
 					</div>
@@ -125,7 +125,7 @@ function MyProjects({ light }) {
 						<h2 className="font-semibold text-xl">Tafara Care Services</h2>
 						<p>
 							This was a simple static business website, The website features very simple animations and a
-							contact form.
+							contact form. THis site is not live yet as it need a little bit more content.
 						</p>
 					</div>
 				</div>
